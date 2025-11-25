@@ -513,6 +513,31 @@ hr {
   border-radius: 25px;
 
 }
+
+.hidden-project {
+  display: none; /* keep them hidden initially */
+}
+
+.view-more-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#view-more-btn {
+  background: #1e40af;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+#view-more-btn:hover {
+  background: #2563eb;
+}
+
 /* Certifications Section */
 .certifications {
   margin: 160px 200px;             /* same spacing as project */
@@ -644,6 +669,32 @@ hr {
     padding: 6px 6px;
   }
 }
+/* for hide button */
+
+.hidden-cert {
+  display: none; /* start hidden */
+}
+
+.view-more-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#view-more-cert-btn {
+  background: #1e40af;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+#view-more-cert-btn:hover {
+  background: #2563eb;
+}
+
 .contact{
     margin: 160px 200px;
     display: flex;

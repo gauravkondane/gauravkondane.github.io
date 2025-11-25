@@ -212,7 +212,7 @@
     </div>
 
     <!-- Customer Behavior Analysis -->
-    <div class="project-card">
+ <div class="project-card hidden-project">
       <img src="images/customer_behavior.png" alt="Customer Behavior Analysis">
       <h3>Customer Behavior Analysis</h3>
       <p>Dashboard analyzing customer trends, sales, and revenue by category, age, and subscription.</p>
@@ -227,7 +227,7 @@
     </div>
 
     <!-- Hotel Booking Cancellations -->
-    <div class="project-card">
+ <div class="project-card hidden-project">
       <img src="images/Hotel Cancellation.png" alt="Hotel Booking Cancellations">
       <h3>Hotel Booking Cancellations</h3>
       <p>Excel dashboard revealing cancellation trends, reducing booking risk by 15%.</p>
@@ -241,7 +241,7 @@
     </div>
 
     <!-- Coffee Shop Sales Analysis -->
-    <div class="project-card">
+    <div class="project-card hidden-project">
       <img src="images/Coffee Dashboard.png" alt="Coffee Shop Sales Analysis">
       <h3>Coffee Shop Sales Analysis</h3>
       <p>Excel dashboard analyzing ₹698K sales & 149K footfall for inventory and staffing insights.</p>
@@ -256,7 +256,7 @@
     </div>
 
     <!-- SQL Data Cleaning -->
-    <div class="project-card">
+     <div class="project-card hidden-project">
       <img src="images/Sql data cleaning .png" alt="SQL Data Cleaning">
       <h3>SQL Data Cleaning – Layoffs Dataset</h3>
       <p>Cleaned layoffs data in MySQL using window functions, improving dataset reliability.</p>
@@ -271,6 +271,10 @@
     </div>
 
   </div>
+  <div class="view-more-container">
+    <button id="view-more-btn" class="btn">View More Projects</button>
+  </div>
+
 </section>
      <!--Fine Projecy-->
 
@@ -310,7 +314,7 @@
     </div>
 
     <!-- Quantium -->
-    <div class="certification-card">
+     <div class="certification-card hidden-cert">
       <img src="images/Qantium_Data_Analytics_Certificate_page-0001.jpg" alt="Quantium Data Analytics">
       <h3>Quantium Data Analytics</h3>
       <p>By Forage</p>
@@ -319,6 +323,10 @@
     </div>
 
   </div>
+  <div class="view-more-container">
+    <button id="view-more-cert-btn" class="btn">View More Certifications</button>
+  </div>
+
 </section>
 <!-- Fine Certification -->
      <!-- cer-->
@@ -415,6 +423,41 @@
 </footer>
 
      <script src="main.js"></script>
-    
+<script>
+const btn = document.getElementById("view-more-btn");
+
+btn.addEventListener("click", function() {
+  const hiddenProjects = document.querySelectorAll(".hidden-project");
+  const isHidden = hiddenProjects[0].style.display === "" || hiddenProjects[0].style.display === "none";
+
+  if (isHidden) {
+    // Show hidden projects
+    hiddenProjects.forEach(project => project.style.display = "block");
+    btn.textContent = "Hide Projects"; // change button text
+  } else {
+    // Hide them again
+    hiddenProjects.forEach(project => project.style.display = "none");
+    btn.textContent = "View More Projects"; // reset button text
+  }
+});
+</script>
+<script>
+const certBtn = document.getElementById("view-more-cert-btn");
+
+certBtn.addEventListener("click", function() {
+  const hiddenCerts = document.querySelectorAll(".hidden-cert");
+  const isHidden = hiddenCerts[0].style.display === "" || hiddenCerts[0].style.display === "none";
+
+  if (isHidden) {
+    // Show hidden certifications
+    hiddenCerts.forEach(cert => cert.style.display = "block");
+    certBtn.textContent = "Hide Certifications"; // change button text
+  } else {
+    // Hide them again
+    hiddenCerts.forEach(cert => cert.style.display = "none");
+    certBtn.textContent = "View More Certifications"; // reset button text
+  }
+});
+</script>
 </body>
 </html>
