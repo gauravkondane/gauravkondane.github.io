@@ -611,8 +611,8 @@ hr {
   background: #1e40af;
   color: white;
   text-decoration: none;
-  padding: 8px 14px;
-  border-radius: 25px;
+  padding: 8px 16px;
+  border-radius: 10px;
   font-size: 0.9rem;
   transition: 0.3s;
   display: flex;
@@ -631,7 +631,7 @@ hr {
   }
 
   .certifications-container {
-    grid-template-columns: 1fr;       /* stack cards vertically */
+    grid-template-columns: 0.9fr;       /* stack cards vertically */
     gap: 20px;
     padding: 0 10px;
   }
@@ -659,7 +659,7 @@ hr {
 
   .certification-card .btn {
     font-size: 0.85rem;
-    padding: 6px 12px;
+    padding: 4px 6px;
   }
 }
 .contact{
