@@ -152,7 +152,7 @@
 
 <!--Project -->
 <section class="project" id="project">
-  <p>PROJECTS</p>
+ <p></p> <p>PROJECTS</p>
   <h1>Featured Work</h1>
   <hr>
   <div class="info-pro">
@@ -277,7 +277,7 @@
 <!-- Certification -->
  
 <section class="certifications" id="certification">
-  <p>CERTIFICATIONS</p>
+  <p></p><p>CERTIFICATIONS</p>
   <h1>My Achievements</h1>
   <hr>
   <div class="certifications-container">
@@ -415,27 +415,6 @@
 </footer>
 
      <script src="main.js"></script>
-     <script>
-  const transition = document.getElementById("page-transition");
-  const links = document.querySelectorAll("a");
-
-  links.forEach(link => {
-    link.addEventListener("click", e => {
-      // Only animate for internal links
-      if (link.href && link.href.indexOf(window.location.origin) === 0) {
-        e.preventDefault();
-        transition.classList.add("active");
-        setTimeout(() => {
-          window.location.href = link.href;
-        }, 600); // match CSS transition duration
-      }
-    });
-  });
-
-  // Fade out transition when page loads
-  window.addEventListener("load", () => {
-    transition.classList.remove("active");
-  });
-</script>
+    
 </body>
 </html>
