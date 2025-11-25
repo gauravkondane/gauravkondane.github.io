@@ -623,6 +623,45 @@ hr {
 .certification-card .btn:hover {
   background: #2563eb;
 }
+
+
+@media (max-width: 768px) {
+  .certifications {
+    margin: 60px 20px;
+  }
+
+  .certifications-container {
+    grid-template-columns: 1fr;       /* stack cards vertically */
+    gap: 20px;
+    padding: 0 10px;
+  }
+
+  .certification-card {
+    width: 100%;
+    max-width: 100%;
+    padding: 15px;
+    border-radius: 12px;
+  }
+
+  .certification-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .certification-card h3 {
+    font-size: 1rem;
+  }
+
+  .certification-card p {
+    font-size: 0.85rem;
+  }
+
+  .certification-card .btn {
+    font-size: 0.85rem;
+    padding: 6px 12px;
+  }
+}
 .contact{
     margin: 160px 200px;
     display: flex;
