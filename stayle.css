@@ -978,8 +978,8 @@ body {
   z-index: 9999;
   color: #00f0ff;
   text-align: center;
-  font-size: 1.2rem;
-  transition: opacity 0.5s ease; /* smooth fade */
+  font-size: 1rem;
+  transition: opacity 0.2s ease; /* smooth fade */
 }
 
 /* Hidden state (add/remove with JS) */
@@ -994,7 +994,7 @@ body {
 }
 
 .fall {
-  animation: fall 0.9s forwards;
+  animation: fall 0.3s forwards;
 }
 
 @keyframes fall {
@@ -1017,6 +1017,12 @@ body {
   margin: 20px 0;
 }
 
+/* .loading-content > * {
+  opacity: 0;
+  transform: translateY(-200px);
+  animation: fall 0.5s forwards;
+} */
+
 .sub-icons {
   display:flex;
   justify-content:center;
@@ -1026,7 +1032,7 @@ body {
 
 #main-page {
   opacity:0;
-  transition: opacity 1s ease;
+  transition: opacity 0.2s ease;
 }
 
 #main-page.visible {
