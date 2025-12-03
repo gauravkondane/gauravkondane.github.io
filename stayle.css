@@ -15,7 +15,14 @@ header {
   margin: 15px 20px;
 }
 
-
+.icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 300px;
+  padding: 60px;
+}
 
 .div-list {
   display: flex;
@@ -939,7 +946,7 @@ hr {
 }
 
 .footer-social a:hover {
-  color: #474af0;
+  color: #5235ba;
 }
 
 .footer-copy {
